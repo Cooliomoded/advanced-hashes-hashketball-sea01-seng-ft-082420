@@ -171,6 +171,7 @@ def player_numbers(q_team)
       player_array.push(player[:number])
       return player_array.sort
     end
+    end
   end
 end
 
