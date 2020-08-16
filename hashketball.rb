@@ -152,6 +152,7 @@ end
 def team_colors(q_team)
   game_hash.each do |team, team_hashes|
     team
+  end
 
 end
 
