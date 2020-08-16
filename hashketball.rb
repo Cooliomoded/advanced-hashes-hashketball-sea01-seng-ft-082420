@@ -132,17 +132,25 @@ def num_points_scored(q_player)
   game_hash.each do |team, team_hashes|
     team_hashes[:players].each do |position|
       if position[:player_name] == q_player
-        return postion[:points]
+        return position[:points]
       end
     end
   end
 end
 
 def shoe_size(q_player)
-
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |position|
+      if position[:player_name] == q_player
+        return position[:shoe_size]
+      end
+    end
+  end
 end
 
 def team_colors(q_team)
+  game_hash.each do |team, team_hashes|
+    team
 
 end
 
