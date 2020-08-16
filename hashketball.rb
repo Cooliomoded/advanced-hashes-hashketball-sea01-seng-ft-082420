@@ -159,8 +159,7 @@ end
 def team_names
   team_names = []
   game_hash.each do |team, team_hashes|
-    team_names.push(team_hashes[:team_name])
-    team_hashes.shift
+    team_names.push(team_hashes[:team_name => team_hashes.splice()])
   end
 
 end
