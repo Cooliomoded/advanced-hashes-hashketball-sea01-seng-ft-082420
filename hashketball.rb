@@ -168,10 +168,10 @@ def player_numbers(q_team)
     team_hashes[:players].each do |player|
       player_array ||= []
       player_array.push(player[:number])
-      return player_array.sort
     end
     end
   end
+  player_array
 end
 
 def player_stats(q_player)
