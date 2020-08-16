@@ -158,9 +158,7 @@ end
 
 def team_names
   game_hash.keys.find do |key|
-    if team == q_team
-      return team[q_team][:team_name]
-    end
+      binding.pry
   end
 end
 
