@@ -162,7 +162,7 @@ def team_names
     team_names.push(team_hashes[:team_name])
     team_hashes.shift
   end
-  
+
 end
 
 def player_numbers(q_team)
