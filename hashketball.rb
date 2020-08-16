@@ -138,6 +138,30 @@ def num_points_scored(q_player)
   end
 end
 
+def shoe_size(q_player)
+
+end
+
+def team_colors(q_team)
+
+end
+
+def team_names(q_team)
+
+end
+
+def player_numbers(q_player)
+
+end
+
+def player_stats(q_player)
+
+end
+
+def big_shoe_rebounds
+
+end
+
 # game_hash is a hash of hashes. it contains the keys
 #home and away. their values are more hashes.
 #these hashes contain 3 keys,
