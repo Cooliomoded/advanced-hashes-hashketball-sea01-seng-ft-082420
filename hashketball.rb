@@ -150,8 +150,8 @@ end
 
 def team_colors(q_team)
   game_hash.each do |team|
-    team[:name] == q_team
     binding.pry
+    team[:name] == q_team
   end
 
 end
