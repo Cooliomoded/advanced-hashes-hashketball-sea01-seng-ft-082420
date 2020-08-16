@@ -131,6 +131,7 @@ end
 def num_points_scored(player)
   game_hash.each do |team, team_hashes|
     team_hashes.each do |team_attributes, attributes_or_arrays|
+      attributes_or_arrays[player][:points]
         binding.pry
     end
   end
