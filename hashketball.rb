@@ -158,8 +158,8 @@ end
 
 def team_names
   game_hash.each do |team, team_hashes|
-    puts team_hashes.shift
-    puts team_hashes
+    return team_hashes.shift = {team_hashes}
+    
   end
 end
 
