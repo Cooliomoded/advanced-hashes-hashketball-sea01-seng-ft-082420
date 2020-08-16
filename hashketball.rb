@@ -129,7 +129,8 @@ end
 def num_points_scored
   game_hash.each do |team, team_hashes|
     team_hashes.each do |team_attributes, attributes_or_arrays|
-      attributes_or_arrays.keys.find do |
+      attributes_or_arrays.keys.find do |keys|
+        keys[:points]
       end
     end
   end
