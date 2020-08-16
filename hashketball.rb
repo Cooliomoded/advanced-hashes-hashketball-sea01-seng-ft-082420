@@ -185,7 +185,14 @@ def player_stats(q_player)
 end
 
 def big_shoe_rebounds
-
+  biggest_shoe = 0
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |postion|
+      if position[:shoe] > biggest_shoe
+        biggest_shoe = position[:shoe]
+      end
+    end
+  end 
 end
 
 # game_hash is a hash of hashes. it contains the keys
