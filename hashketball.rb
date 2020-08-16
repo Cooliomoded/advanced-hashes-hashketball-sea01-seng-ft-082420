@@ -157,8 +157,9 @@ def team_colors(q_team)
 end
 
 def team_names
+  team_names = []
   game_hash.each do |team, team_hashes|
-    team_hashes.shift
+    team_names.push(team_hashes.shift)
     binding.pry
   end
 end
