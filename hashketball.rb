@@ -1,3 +1,5 @@
+require 'pry'
+
 # Write your code below game_hash
 def game_hash
   {
@@ -126,4 +128,90 @@ def game_hash
   }
 end
 
+def num_points_scored(q_player)
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |position|
+      if position[:player_name] == q_player
+        return position[:points]
+      end
+    end
+  end
+end
+
+def shoe_size(q_player)
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |position|
+      if position[:player_name] == q_player
+        return position[:shoe]
+      end
+    end
+  end
+end
+
+def team_colors(q_team)
+  game_hash.each do |team, team_hashes|
+    if team_hashes[:team_name] == q_team
+    return team_hashes[:colors]
+    end
+  end
+end
+
+def team_names
+  team_names = []
+  game_hash.each do |team, team_hashes|
+    team_names.push(team_hashes[:team_name])
+    team_hashes.delete(:team_name)
+  end
+  return team_names
+end
+
+def player_numbers(q_team)
+  player_array = []
+  game_hash.each do |team, team_hashes|
+    if team_hashes[:team_name] == q_team
+    team_hashes[:players].each do |player|
+      player_array.push(player[:number])
+      end
+    end
+  end
+  return player_array
+end
+
+def player_stats(q_player)
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |position|
+      if position[:player_name] == q_player
+        return position
+      end
+    end
+  end
+end
+
+def big_shoe_rebounds
+  biggest_shoe = 0
+  most_rebounds = 0
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |position|
+      if position[:shoe] > biggest_shoe
+        biggest_shoe = position[:shoe]
+        if position[:shoe] = biggest_shoe
+          most_rebounds = position[:rebounds]
+        end
+      end
+    end
+  end
+  return most_rebounds
+end
+
+# game_hash is a hash of hashes. it contains the keys
+#home and away. their values are more hashes.
+#these hashes contain 3 keys,
+#team_name, colors, and players.
+#team_name is a key that points to an array. It's array contains 1 string.
+#colors is the key to an array that contains 2 strings, different colors.
+#players is a key pointing and array.
+#This value in the form of an array object contains 5 hashes each.
+#These hashes each contain 9 keys.
+#The first of each of these keys' values contains a string,
+#All of the rest contain integers.
 # Write code here
