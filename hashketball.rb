@@ -192,7 +192,7 @@ def big_shoe_rebounds
       if position[:shoe] > biggest_shoe
         biggest_shoe = position[:shoe]
         if position[:shoe] = biggest_shoe
-          most_rebounds = postion[:rebounds]
+          most_rebounds = position[:rebounds]
         end
       end
     end
