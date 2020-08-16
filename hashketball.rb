@@ -158,7 +158,7 @@ end
 
 def team_names
   game_hash.each do |team, team_hashes|
-    return team_hashes[:team_name]
+    team_hashes[:team_name]
   end
 end
 
