@@ -186,14 +186,16 @@ end
 
 def big_shoe_rebounds
   biggest_shoe = 0
+  most_rebounds = 0
   game_hash.each do |team, team_hashes|
     team_hashes[:players].each do |position|
       if position[:shoe] > biggest_shoe
         biggest_shoe = position[:shoe]
+        if position[:shoe] = biggest_shoe
+          most_rebounds = postion[:rebounds]
       end
     end
   end
-  return biggest_shoe
 end
 
 # game_hash is a hash of hashes. it contains the keys
