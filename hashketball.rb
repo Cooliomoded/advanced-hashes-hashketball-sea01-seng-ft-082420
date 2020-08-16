@@ -167,6 +167,7 @@ def player_numbers(q_player)
     team_hashes[:players].each do |player|
       player_array = []
       player_array.push(player[:number])
+      return player_array.sort
       binding.pry
     end
   end
