@@ -131,9 +131,9 @@ end
 def num_points_scored(player)
   game_hash.each do |team, team_hashes|
     team_hashes.each do |team_attributes, attributes_or_arrays|
-        binding.pry
     end
   end
+  binding.pry
 end
 
 # game_hash is a hash of hashes. it contains the keys
