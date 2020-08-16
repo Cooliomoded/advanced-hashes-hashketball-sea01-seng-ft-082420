@@ -133,7 +133,6 @@ def num_points_scored(player_q)
     team_hashes[:players].each do |position|
       if position[:player_name] == player_q
         player_points = position[:points]
-      binding.pry
       end
     end
   end
