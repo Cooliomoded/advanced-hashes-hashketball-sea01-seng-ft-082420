@@ -161,7 +161,6 @@ def team_names
   game_hash.each do |team, team_hashes|
     team_names.push(team_hashes[:team_name])
     team_hashes.delete(:team_name)
-    end
   end
   return team_names
 end
