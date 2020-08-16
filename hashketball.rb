@@ -143,7 +143,7 @@ def shoe_size(q_player)
     team_hashes[:players].each do |position|
       if position[:player_name] == q_player
         binding.pry
-        return position[:shoe_size]
+        return position[:shoe]
       end
     end
   end
