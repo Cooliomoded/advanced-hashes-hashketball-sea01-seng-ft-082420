@@ -170,8 +170,8 @@ def player_numbers(q_team)
       player_array.push(player[:number])
     end
     end
+    player_array
   end
-  player_array
 end
 
 def player_stats(q_player)
