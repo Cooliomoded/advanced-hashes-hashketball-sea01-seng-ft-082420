@@ -133,10 +133,10 @@ def num_points_scored(player_q)
     team_hashes[:players].each do |position|
       if position[:player_name] == player_q
         player_points = position[:points]
+        player_points
       end
     end
   end
-  player_points
 end
 
 # game_hash is a hash of hashes. it contains the keys
