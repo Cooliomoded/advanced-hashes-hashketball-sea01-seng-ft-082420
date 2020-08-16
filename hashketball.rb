@@ -160,6 +160,7 @@ def team_names
   team_names = []
   game_hash.each do |team, team_hashes|
     team_names.push(team_hashes[:team_name => team_hashes.splice()])
+    binding.pry
   end
 
 end
