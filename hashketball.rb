@@ -157,7 +157,7 @@ def team_colors(q_team)
 end
 
 def team_names
-  game_hash.keys.find do |key|
+  game_hash.each do |team, team_hashes|
     binding.pry
     key[:team_name]
   end
