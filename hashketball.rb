@@ -160,6 +160,8 @@ def team_names(q_team)
   game_hash.each do |team, team_hashes|
     if team_hashes[:team_name] == q_team
       return team_hashes[:team_name]
+    end
+  end
 end
 
 def player_numbers(q_player)
