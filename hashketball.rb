@@ -158,8 +158,8 @@ end
 
 def team_names
   game_hash.keys.find do |key|
+    binding.pry
     key[:team_name]
-      binding.pry
   end
 end
 
