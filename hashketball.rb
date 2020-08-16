@@ -162,8 +162,9 @@ end
 #  end
 #end
 
-def player_numbers
+def player_numbers(q_team)
   game_hash.each do |team, team_hashes|
+    if team_hashes[:team_name] == q_team
     team_hashes[:players].each do |player|
       player_array = []
       player_array.push(player[:number])
