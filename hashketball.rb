@@ -162,7 +162,7 @@ def team_names
     team_names.push(team_hashes[:team_name])
     team_hashes.delete(:team_name)
       team_names.each do |name|
-        :name => team_hashes
+        "name": => team_hashes
         binding.pry
     end
   end
