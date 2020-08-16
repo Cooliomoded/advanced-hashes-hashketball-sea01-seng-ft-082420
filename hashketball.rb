@@ -161,11 +161,10 @@ def team_names
   game_hash.each do |team, team_hashes|
     team_names.push(team_hashes[:team_name])
     team_hashes.delete(:team_name)
-    team_names.each do |name|
-    binding.pry
+      team_names.each do |name|
+        binding.pry
     end
   end
-
 end
 
 def player_numbers(q_team)
