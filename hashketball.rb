@@ -162,7 +162,7 @@ end
 #  end
 #end
 
-def player_numbers(q_player)
+def player_numbers
   game_hash.each do |team, team_hashes|
     team_hashes[:players].each do |player|
       player_array = []
