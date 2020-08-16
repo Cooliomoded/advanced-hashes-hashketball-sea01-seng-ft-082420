@@ -192,7 +192,7 @@ def big_shoe_rebounds
         biggest_shoe = position[:shoe]
       end
     end
-  end 
+  end
 end
 
 # game_hash is a hash of hashes. it contains the keys
