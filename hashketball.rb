@@ -156,14 +156,18 @@ def team_colors(q_team)
   end
 end
 
-def team_names
-  game_hash.each do |team, team_hashes|
-    return team_hashes[:team_name]
-  end
-end
+#def team_names
+#  game_hash.each do |team, team_hashes|
+#    return team_hashes[:team_name]
+#  end
+#end
 
 def player_numbers(q_player)
-
+  game_hash.each do |team, team_hashes|
+    team_hashes[:players].each do |player|
+      binding.pry
+    end
+  end
 end
 
 def player_stats(q_player)
