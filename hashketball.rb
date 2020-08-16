@@ -164,9 +164,8 @@ end
 
 def player_numbers(q_player)
   game_hash.each do |team, team_hashes|
-    team_hashes[:players].sort.each do |player|
+    team_hashes[:players].sort do |player|
       binding.pry
-      player[:number].sort
     end
   end
 end
