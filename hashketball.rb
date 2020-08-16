@@ -156,11 +156,12 @@ def team_colors(q_team)
   end
 end
 
-#def team_names
-#  game_hash.each do |team, team_hashes|
-#    return team_hashes[:team_name]
-#  end
-#end
+def team_names
+  game_hash.each do |team, team_hashes|
+    binding.pry
+    return team_hashes[:team_name]
+  end
+end
 
 def player_numbers(q_team)
   player_array = []
@@ -168,7 +169,7 @@ def player_numbers(q_team)
     if team_hashes[:team_name] == q_team
     team_hashes[:players].each do |player|
       player_array.push(player[:number])
-    end
+      end
     end
   end
   return player_array
