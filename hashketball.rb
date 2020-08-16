@@ -163,6 +163,7 @@ def team_names
     team_hashes.delete(:team_name)
     team_names.each do |name|
     binding.pry
+    end
   end
 
 end
