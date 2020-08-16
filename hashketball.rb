@@ -164,6 +164,7 @@ end
 
 def player_numbers(q_team)
   game_hash.each do |team, team_hashes|
+    if team_hashes[:team_name] == q_team
     binding.pry
     team_hashes[:players].each do |player|
       player_array = []
