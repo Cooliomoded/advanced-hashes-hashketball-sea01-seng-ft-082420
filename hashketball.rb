@@ -132,7 +132,7 @@ def num_points_scored(q_player)
   game_hash.each do |team, team_hashes|
     team_hashes[:players].each do |position|
       if position[:player_name] == q_player
-        puts postion[:points]
+        return postion[:points]
       end
     end
   end
