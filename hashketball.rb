@@ -158,8 +158,7 @@ end
 
 def team_names
   game_hash.each do |team, team_hashes|
-    puts team_hashes[:team_name][team]
-    binding.pry
+    puts team_hashes[:team_name]
   end
 end
 
