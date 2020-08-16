@@ -136,6 +136,7 @@ def num_points_scored(player)
       end
     end
   end
+  binding.pry
 end
 
 # game_hash is a hash of hashes. it contains the keys
