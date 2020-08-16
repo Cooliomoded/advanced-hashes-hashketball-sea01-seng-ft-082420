@@ -126,4 +126,24 @@ def game_hash
   }
 end
 
+def num_points_scored
+  game_hash.each do |team, team_hashes|
+    team_hashes.each do |team_attributes, attributes_or_arrays|
+      attributes_or_arrays.keys.find do |
+      end
+    end
+  end
+end
+
+# game_hash is a hash of hashes. it contains the keys
+#home and away. their values are more hashes.
+#these hashes contain 3 keys,
+#team_name, colors, and players.
+#team_name is a key that points to an array. It's array contains 1 string.
+#colors is the key to an array that contains 2 strings, different colors.
+#players is a key pointing and array.
+#This value in the form of an array object contains 5 hashes each.
+#These hashes each contain 9 keys.
+#The first of each of these keys' values contains a string,
+#All of the rest contain integers.
 # Write code here
