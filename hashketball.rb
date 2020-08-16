@@ -158,6 +158,7 @@ end
 
 def team_names(q_team)
   game_hash.each do |team|
+    binding.pry
     if team == q_team
       return team[q_team][:team_name]
     end
