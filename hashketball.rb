@@ -161,8 +161,8 @@ def team_names
   game_hash.each do |team, team_hashes|
     team_names.push(team_hashes[:team_name])
     team_hashes.shift
-    binding.pry
   end
+  
 end
 
 def player_numbers(q_team)
